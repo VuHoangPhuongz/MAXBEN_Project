@@ -1536,27 +1536,21 @@ generateLabels: function(chart) {
         });
 
     });
-function showMessage() {
-  alert("Chúc bạn một ngày tốt lành từ MAXBEN!");
+const themeToggle = document.getElementById('themeToggle');
+const currentTheme = localStorage.getItem('theme');
+
+// Áp dụng theme đã lưu (nếu có)
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-theme');
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("themeToggle");
-
-  // Lấy trạng thái đã lưu
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-theme");
-  }
-
-  toggleBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-theme");
-
+// Bắt sự kiện click
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
     // Lưu trạng thái theme
-    if (document.body.classList.contains("dark-theme")) {
-      localStorage.setItem("theme", "dark");
+    if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
     } else {
-      localStorage.setItem("theme", "light");
+        localStorage.setItem('theme', 'light');
     }
-  });
 });
