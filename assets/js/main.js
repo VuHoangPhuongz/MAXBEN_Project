@@ -1536,21 +1536,20 @@ generateLabels: function(chart) {
         });
 
     });
-const themeToggle = document.getElementById('themeToggle');
-const currentTheme = localStorage.getItem('theme');
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return console.error("Không tìm thấy nút #themeToggle");
+  
+  // Lấy theme đã lưu
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.add("light-theme");
+  }
 
-// Áp dụng theme đã lưu (nếu có)
-if (currentTheme === 'dark') {
-    document.body.classList.add('dark-theme');
-}
-
-// Bắt sự kiện click
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    // Lưu trạng thái theme
-    if (document.body.classList.contains('dark-theme')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
+  btn.addEventListener("click", function() {
+    document.body.classList.toggle("dark-theme");
+    document.body.classList.toggle("light-theme");
+    localStorage.setItem("theme", document.body.classList.contains("dark-theme") ? "dark" : "light");
+  });
 });
