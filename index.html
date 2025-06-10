@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic Danh Mục Sản Phẩm MAXBEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   </head>
+<body class="antialiased leading-relaxed">
+
+    <nav id="navbar" class="sticky top-0 z-50 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-center items-center">
+            <div class="flex space-x-4 md:space-x-8 text-sm md:text-base">
+                <a href="#intro" class="hover:text-white transition-colors duration-300">Giới Thiệu</a>
+                <a href="#product-categories" class="hover:text-white transition-colors duration-300">Danh Mục</a>
+                <a href="#quality-metrics" class="hover:text-white transition-colors duration-300">Chất Lượng</a>
+                <a href="#applications" class="hover:text-white transition-colors duration-300">Ứng Dụng</a>
+                <a href="#product-details-section" class="hover:text-white transition-colors duration-300">Chi Tiết SP</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header id="intro" class="text-center my-12 md:my-16 scroll-mt-20">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 text-glow">MAXBEN</h1>
+            <p class="text-xl md:text-2xl font-light section-subtitle">Khám Phá Danh Mục Sản Phẩm & Ưu Thế Vượt Trội</p>
+        </header>
+
+        <section id="product-categories" class="my-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title">Danh Mục Sản Phẩm Đa Dạng</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 section-subtitle">MAXBEN cung cấp một hệ sinh thái sản phẩm chiếu sáng phong phú, đáp ứng mọi nhu cầu từ dân dụng đến công nghiệp.</p>
+            <div class="card rounded-xl shadow-2xl p-6">
+                <h3 class="text-xl font-semibold text-center mb-6 text-white" id="mainChartTitle">Phân Loại Sản Phẩm Chính</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="productChartsContainer">
+                    <div class="chart-container" id="mainProductChartWrapper">
+                        <canvas id="productCategoryChart"></canvas>
+                    </div>
+                    <div class="chart-container hidden" id="powerChartWrapper">
+                        <h4 class="text-lg font-semibold text-white mb-2 text-center" id="powerChartTitle">Công suất đèn</h4>
+                        <canvas id="productPowerChart"></canvas>
+                    </div>
+                </div>
+                <button id="backButton" class="mt-4 mx-auto product-category-button hidden">← Quay Lại Danh Mục Chính</button>
+                <p class="text-center mt-6 text-sm" id="productCategoryChartDescription">Biểu đồ thể hiện sự đa dạng trong danh mục sản phẩm của MAXBEN, với các nhóm chính bao gồm đèn dân dụng, đèn chuyên dụng và các giải pháp chiếu sáng đặc biệt như đèn pin và quạt trần đèn.</p>
+            </div>
+        </section>
+
+        <section id="quality-metrics" class="my-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title">Chất Lượng & Công Nghệ Tiên Phong</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 section-subtitle">Cam kết mang lại sản phẩm chất lượng cao nhất với hiệu suất vượt trội và độ bền ấn tượng.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <div class="card rounded-xl p-6 text-center kpi-card">
+                    <p class="text-base font-medium mb-2">Chỉ Số Hoàn Màu Tối Đa</p>
+                    <p class="text-4xl font-bold stat-value">CRI >98</p>
+                    <p class="text-sm">Ánh sáng chân thực</p>
+                </div>
+                <div class="card rounded-xl p-6 text-center kpi-card">
+                    <p class="text-base font-medium mb-2">Tuổi Thọ Cao Nhất</p>
+                    <p class="text-4xl font-bold stat-value">30,000+</p>
+                    <p class="text-sm">giờ chiếu sáng</p>
+                </div>
+                <div class="card rounded-xl p-6 text-center kpi-card">
+                    <p class="text-base font-medium mb-2">Bảo Hành Dài Hạn</p>
+                    <p class="text-4xl font-bold stat-value">36-60</p>
+                    <p class="text-sm">tháng</p>
+                </div>
+            </div>
+
+            <div class="card rounded-xl shadow-2xl p-6">
+                <h3 class="text-xl font-semibold text-center mb-6 text-white">So Sánh Hiệu Suất Sản Phẩm Theo Chỉ Số CRI</h3>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="criComparisonChart"></canvas>
+                </div>
+                <p class="text-center mt-6 text-sm">Biểu đồ so sánh mức độ phổ biến của các dải chỉ số hoàn màu (CRI) trong danh mục sản phẩm MAXBEN. Đa số sản phẩm đạt CRI cao, đảm bảo chất lượng ánh sáng tốt nhất.</p>
+            </div>
+        </section>
+<section id="led-knowledge" class="my-16 scroll-mt-20">
+    <h2 class="text-3xl font-bold text-center mb-2 section-title">Kiến Thức Cơ Bản Về Đèn LED</h2>
+    <p class="text-center max-w-4xl mx-auto mb-10 section-subtitle">Tổng hợp chi tiết các khái niệm, thông số kỹ thuật và đặc điểm quan trọng giúp bạn hiểu rõ hơn về công nghệ chiếu sáng LED.</p>
+    <div class="card rounded-xl shadow-2xl p-6 md:p-8 text-left content-section">
+        <h3>Phần 1: Nền tảng Công nghệ LED</h3>
+        <h4>1. Cấu Trúc Cơ Bản Của Đèn LED</h4>
+            <ul>
+            <li><strong>Loại 1: Nguồn (Driver) và Chip LED Tách Rời:</strong> Bền, an toàn và ổn định hơn nhờ không gian cho linh kiện bảo vệ và tản nhiệt tốt. Tuy nhiên giá thành cao hơn.</li>
+            <li><strong>Loại 2: Công nghệ DOB (Driver On Board):</strong> Giá thành rẻ, ít lỗi vặt do đồng bộ. Tuy nhiên tuổi thọ thấp hơn và kém an toàn hơn.</li>
+        </ul>
+
+        <h4>2. Giải Thích Các Thông Số Kỹ Thuật Quan Trọng</h4>
+        <ul>
+            <li><strong>Hiệu suất phát sáng (lm/W):</strong> Thước đo khả năng tiết kiệm điện. Hiệu suất quá cao (>100 lm/W) có thể gây chói, trong khi hiệu suất hài hòa (~85 lm/W) tạo cảm giác dễ chịu.</li>
+            <li><strong>Độ Hoàn Màu (CRI):</strong> Phản ánh độ trung thực của màu sắc. MAXBEN tập trung vào CRI cao (>90), đặc biệt là chỉ số **R9 (màu đỏ)**, yếu tố phân biệt đèn cao cấp.</li>
+            <li><strong>Độ Chói (UGR):</strong> Chỉ số đo mức độ gây khó chịu cho mắt. Các sản phẩm cao cấp của MAXBEN có thiết kế chóa sâu để đạt **UGR < 19**, tiêu chuẩn cho văn phòng, học tập.</li>
+                <li><strong>An Toàn Ánh Sáng Xanh (RG):</strong> Phân loại mức độ nguy cơ gây hại cho mắt. Dòng **Âm trần HAPPY V2** đạt chuẩn **RG0 (Nhóm miễn trừ)**, an toàn tuyệt đối cho người dùng, đặc biệt là trẻ em.</li>
+        </ul>
+
+        <h3>Phần 2: Định Hướng & Chiến Lược Sản Phẩm</h3>
+        <h4>1. Phân Cấp Sản Phẩm Rõ Ràng</h4>
+        <ul>
+            <li><strong>Chiếu sáng Phổ Thông:</strong> Tập trung vào độ sáng và tuổi thọ (Bulb, Tuýp, Âm trần tỏa...).</li>
+            <li><strong>Chiếu sáng Hiện Đại:</strong> Đề cao thẩm mỹ và chất lượng ánh sáng (Spotlight, Ray Nam Châm, Dây LED COB...).</li>
+        </ul>
+        <h4>2. Sự Khác Biệt Giữa Chiếu Sáng Phổ Thông và Hiện Đại</h4>
+        <div class="overflow-x-auto">
+            <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>Tiêu Chí</th>
+                        <th>Thiết Kế Phổ Thông</th>
+                        <th>Thiết Kế Hiện Đại</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mục đích</strong></td>
+                        <td>Làm sáng toàn bộ không gian.</td>
+                        <td>Tạo lớp lang, chiều sâu, dẫn dắt cảm xúc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công cụ</strong></td>
+                        <td>Đèn tỏa rộng (Downlight 120°).</td>
+                        <td>Đèn chiếu điểm (Spotlight 15°-60°), đèn hắt.</td>
+                    </tr>
+                        <tr>
+                        <td><strong>Hiệu ứng</strong></td>
+                        <td>Ánh sáng phẳng, đồng đều.</td>
+                        <td class="highlight-win">Có vùng sáng - tối, tạo điểm nhấn, làm nổi bật kiến trúc và nội thất.</td>
+                    </tr>
+                        <tr>
+                        <td><strong>Cảm giác</strong></td>
+                        <td>Đơn giản, rõ ràng.</td>
+                        <td class="highlight-win">Sang trọng, tinh tế, có "gu".</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- =================================================================== -->
+<!-- =============== START: FULL SALES HANDBOOK SECTION ================ -->
+<!-- =================================================================== -->
+<section id="sales-handbook" class="my-16 scroll-mt-20">
+    <h2 class="text-3xl font-bold text-center mb-2 section-title">Cẩm Nang Kinh Doanh Toàn Diện</h2>
+    <p class="text-center max-w-4xl mx-auto mb-10 section-subtitle">Công cụ chiến lược dành cho nhân viên kinh doanh, đại lý và nhà phân phối của MAXBEN.</p>
+    <div class="card rounded-xl shadow-2xl p-6 md:p-8 text-left content-section">
+        
+        <h3>Chương 1: Phân Tích Đối Thủ & Định Vị Thương Hiệu</h3>
+        <p>Hiểu rõ vị thế của MAXBEN trên thị trường để biến điểm yếu của đối thủ thành lợi thế bán hàng.</p>
+        <h4>Bảng so sánh đối thủ cạnh tranh</h4>
+        <div class="overflow-x-auto">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th>MAXBEN</th>
+                        <th>Đối thủ A (VD: Rạng Đông)</th>
+                        <th>Đối thủ B (VD: KingLED)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Phân khúc thế mạnh</strong></td>
+                        <td class="highlight-win">Chiếu sáng Hiện đại & Giải pháp toàn diện (CRI cao, UGR thấp, Ray nam châm, Quạt trần DC)</td>
+                        <td>Hàng phổ thông, độ phủ rộng</td>
+                        <td>Đèn trang trí, mẫu mã đa dạng</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Điểm yếu của đối thủ</strong></td>
+                        <td>-</td>
+                        <td>Ít giải pháp cho chiếu sáng hiện đại, thiết kế cơ bản, CRI không đồng đều.</td>
+                        <td>Chất lượng ánh sáng không phải ưu tiên hàng đầu, tập trung vào thiết kế vỏ.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lợi thế chiến thắng của MAXBEN</strong></td>
+                        <td colspan="3" class="highlight-win">Tập trung vào <strong>chất lượng ánh sáng vượt trội</strong> (CRI > 90-98, UGR < 10, RG0) và các <strong>giải pháp thiết kế chuyên sâu</strong> mà đối thủ không có. Cam kết <strong>bảo hành "an tâm"</strong> (5 năm cho động cơ quạt, 3 năm cho đèn cao cấp) là lời khẳng định chất lượng.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Thông điệp định vị</h4>
+        <div class="grid md:grid-cols-2 gap-4 mt-6">
+            <div class="positioning-card">
+                <h5>Khi gặp khách hàng quan tâm về giá:</h5>
+                <p>"MAXBEN là lựa chọn <strong>bền bỉ và an toàn</strong> cho sức khỏe trong dài hạn."</p>
+            </div>
+            <div class="positioning-card">
+                <h5>Khi gặp khách hàng cao cấp:</h5>
+                <p>"MAXBEN là chuyên gia về các <strong>giải pháp chiếu sáng hiện đại, đề cao thẩm mỹ và cảm xúc</strong>."</p>
+            </div>
+        </div>
+
+        <h3>Chương 2: Hướng Dẫn Tư Vấn Thiết Kế Chiếu Sáng Chuyên Nghiệp</h3>
+        <p>Nâng tầm người bán hàng thành chuyên gia tư vấn, tạo ra giá trị gia tăng mà khách hàng không thể có được ở nơi khác.</p>
+        <h4>Nguyên tắc chiếu sáng 3 lớp</h4>
+        <ul>
+            <li><strong>Chiếu sáng tổng thể (Ambient):</strong> Ánh sáng nền, tạo sự thoải mái. Gợi ý: Đèn âm trần tỏa, ốp trần, tuýp.</li>
+            <li><strong>Chiếu sáng công năng (Task):</strong> Ánh sáng cho khu vực làm việc. Gợi ý: Đèn bàn học, đèn rọi ray khu vực bếp.</li>
+            <li><strong>Chiếu sáng điểm nhấn (Accent):</strong> Tạo chiều sâu, nghệ thuật. Gợi ý: Spotlight, đèn tường, đèn rọi ray.</li>
+        </ul>
+        <h4>Công thức tư vấn cho từng không gian</h4>
+        <ul>
+            <li><strong>Phòng khách:</strong> Kết hợp cả 3 lớp ánh sáng để tạo không gian linh hoạt, sử dụng Quạt trần đèn làm điểm nhấn trung tâm.</li>
+            <li><strong>Phòng ngủ:</strong> Ưu tiên ánh sáng ấm (3000K), CRI cao, UGR thấp. Gợi ý Dây LED hắt trần, đèn tường.</li>
+            <li><strong>Showroom/Cửa hàng:</strong> Nhấn mạnh tầm quan trọng của <strong>CRI > 90</strong> để làm sản phẩm bắt mắt, kết hợp Spotlight và Ray nam châm để linh hoạt thay đổi bố cục.</li>
+        </ul>
+
+        <h3>Chương 3: Chính Sách Bán Hàng & Hỗ Trợ Đối Tác</h3>
+        <p>Cung cấp thông tin minh bạch, rõ ràng để xây dựng lòng tin và tạo động lực cho các đại lý, nhà phân phối.</p>
+        <h4>Chính sách bảo hành & quy trình xử lý</h4>
+        <ul>
+            <li><strong>Bảo hành vượt trội:</strong> Động cơ quạt 5 năm, các dòng đèn cao cấp 3 năm, đèn phổ thông 2 năm.</li>
+            <li><strong>Quy trình:</strong> Hướng dẫn các bước tiếp nhận và xử lý khi có yêu cầu bảo hành từ khách hàng (sẽ được cung cấp trong tài liệu riêng).</li>
+        </ul>
+            <h4>Các chương trình hỗ trợ đối tác</h4>
+            <ul>
+            <li><strong>Marketing:</strong> Cung cấp Catalogue, hình ảnh sản phẩm, standee, hỗ trợ nội dung quảng cáo online.</li>
+            <li><strong>Đào tạo:</strong> Tổ chức các buổi đào tạo sản phẩm mới, kỹ năng bán hàng định kỳ cho đại lý.</li>
+        </ul>
+
+        <h3>Chương 4: Hồ Sơ Năng Lực & Dự Án Tiêu Biểu</h3>
+        <p>Sử dụng bằng chứng thực tế (social proof) để thuyết phục những khách hàng khó tính nhất và các dự án lớn.</p>
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div class="card p-4 rounded-lg">
+                <img src="https://placehold.co/600x400/333/FFF?text=Dự+Án+Biệt+Thự" alt="Dự án Biệt thự Ecopark" class="rounded mb-4">
+                <h5 class="text-white">Dự án: Biệt thự Ecopark</h5>
+                <p><strong>Giải pháp:</strong> Cung cấp hệ thống chiếu sáng hiện đại, nhấn mạnh vào chất lượng ánh sáng (CRI>95) và chống chói (UGR<10) để tạo không gian sống sang trọng, ấm cúng.</p>
+                <p><strong>Sản phẩm sử dụng:</strong> Spotlight ME, Đèn Ray Nam Châm, Quạt trần đèn 8 cánh.</p>
+            </div>
+            <div class="card p-4 rounded-lg">
+                <img src="https://placehold.co/600x400/555/FFF?text=Dự+Án+Showroom" alt="Dự án Showroom thời trang" class="rounded mb-4">
+                <h5 class="text-white">Dự án: Showroom thời trang IVY Moda</h5>
+                <p><strong>Giải pháp:</strong> Tư vấn giải pháp chiếu sáng chuyên nghiệp với CRI>97 để đảm bảo màu sắc sản phẩm trung thực nhất. Sử dụng đèn rọi ray linh hoạt.</p>
+                <p><strong>Sản phẩm sử dụng:</strong> Đèn rọi ray, Spotlight ME, Dây LED COB.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+        <section id="applications" class="my-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title">Ứng Dụng Đa Dạng Trong Đời Sống</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 section-subtitle">Các sản phẩm MAXBEN được thiết kế để phục vụ hiệu quả trong nhiều môi trường khác nhau, từ không gian sống đến khu vực công nghiệp.</p>
+            <div class="card rounded-xl shadow-2xl p-6">
+                 <h3 class="text-xl font-semibold text-center mb-6 text-white">Phân Bổ Sản Phẩm Theo Lĩnh Vực Ứng Dụng</h3>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="applicationChart"></canvas>
+                </div>
+                <p class="text-center mt-6 text-sm">MAXBEN cung cấp giải pháp toàn diện cho cả không gian dân dụng, thương mại và các ứng dụng chuyên biệt, thể hiện khả năng thích ứng với nhiều loại hình dự án.</p>
+            </div>
+        </section>
+
+        <section id="product-details-section" class="my-16 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-center mb-2 section-title">Chi Tiết Sản Phẩm</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 section-subtitle">Khám phá thông tin chi tiết về từng dòng sản phẩm MAXBEN, bao gồm đặc điểm, thông số kỹ thuật và giá cả.</p>
+            <div class="card rounded-xl shadow-2xl p-6">
+                <h3 class="text-xl font-semibold text-center mb-6 text-white">Chọn Danh Mục Để Xem Chi Tiết</h3>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <button class="product-category-button" data-category="Đèn LED Bulb">Đèn LED Bulb</button>
+                    <button class="product-category-button" data-category="Đèn Tuýp LED">Đèn Tuýp LED</button>
+                    <button class="product-category-button" data-category="Đèn LED Âm Trần">Đèn LED Âm Trần</button>
+                    <button class="product-category-button" data-category="Đèn LED Ốp Trần">Đèn LED Ốp Trần</button>
+                    <button class="product-category-button" data-category="Dây LED">Dây LED</button>
+                    <button class="product-category-button" data-category="Đèn Pha LED">Đèn Pha LED</button>
+                    <button class="product-category-button" data-category="Đèn Năng Lượng Mặt Trời">Đèn Năng Lượng Mặt Trời</button>
+                    <button class="product-category-button" data-category="Đèn Ống Bơ">Đèn Ống Bơ</button>
+                    <button class="product-category-button" data-category="Quạt Trần Đèn">Quạt Trần Đèn</button>
+                    <button class="product-category-button" data-category="Đèn Pin">Đèn Pin</button>
+                </div>
+                
+<div class="mb-4 text-center">
+  <input type="text" id="searchInput" placeholder="Tìm sản phẩm..." class="p-2 rounded bg-gray-700 text-white w-full max-w-md" />
+</div>
+<div id="productDetailsContent" class="h-[500px] overflow-y-auto p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                    <p class="text-center text-gray-400">Vui lòng chọn một danh mục sản phẩm để xem chi tiết.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900/50 text-center p-6 mt-16">
+        <p class="font-bold text-lg text-white">KOSOON FL FUTURE LIGHT MAXBEN</p>
+        <p class="text-sm">Tròn Chữ Tín - Vẹn Niềm Tin</p>
+    </footer>
+
+
+         <script src="assets/js/main.js"></script>
+
+</body>
+</html>
