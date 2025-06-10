@@ -157,3 +157,17 @@
         padding: 1rem;
         border-radius: 0.5rem;
     }
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+body.dark-theme #themeToggle {
+  color: yellow;
+}
