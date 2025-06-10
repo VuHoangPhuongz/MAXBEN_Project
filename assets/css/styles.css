@@ -157,17 +157,40 @@
         padding: 1rem;
         border-radius: 0.5rem;
     }
-#themeToggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white;
+/* Light Theme */
+body.light-theme {
+    background-color: #f5f7fa;
+    color: #232946;
 }
 
-body.dark-theme #themeToggle {
-  color: yellow;
+body.light-theme nav,
+body.light-theme .card,
+body.light-theme .positioning-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #232946;
+}
+
+body.light-theme .product-table th,
+body.light-theme .data-table th {
+    background-color: rgba(72, 145, 255, 0.1);
+    color: #232946;
+}
+
+body.light-theme .product-table tr:nth-child(even),
+body.light-theme .data-table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+body.light-theme .product-category-button {
+    background-color: #387AE2;
+    color: #fff;
+}
+
+body.light-theme .sales-pitch {
+    background-color: rgba(72, 145, 255, 0.07);
+    border-left-color: #387AE2;
+}
+
+body.light-theme #themeToggle {
+    color: #232946;
 }

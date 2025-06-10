@@ -1540,21 +1540,19 @@ function showMessage() {
   alert("Chúc bạn một ngày tốt lành từ MAXBEN!");
 }
 
-// Khi trang load xong
 document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.getElementById("themeToggle");
 
-  // Kiểm tra localStorage để áp dụng theme cũ
+  // Lấy trạng thái đã lưu
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     document.body.classList.add("dark-theme");
   }
 
-  // Xử lý khi nhấn nút chuyển theme
   toggleBtn.addEventListener("click", function () {
     document.body.classList.toggle("dark-theme");
 
-    // Lưu lại trạng thái
+    // Lưu trạng thái theme
     if (document.body.classList.contains("dark-theme")) {
       localStorage.setItem("theme", "dark");
     } else {
