@@ -1610,28 +1610,60 @@ generateLabels: function(chart) {
         });
 
         // --- GẮN SỰ KIỆN CHO THANH TÌM KIẾM ---
-        searchInput.addEventListener('input', () => {
-            const keyword = searchInput.value.toLowerCase().trim();
+// --- GẮN SỰ KIỆN CHO THANH TÌM KIẾM ---
+searchInput.addEventListener('input', () => {
+    const keyword = searchInput.value.toLowerCase().trim();
+    if (keyword === '') {
+        productDetailsContent.innerHTML = `<p class="text-center text-gray-400">Vui lòng chọn một danh mục sản phẩm để xem chi tiết hoặc nhập từ khóa để tìm kiếm.</p>`;
+        return;
+    }
 
-            if (keyword === '') {
-                 // Nếu không có từ khóa, hiển thị lại thông báo ban đầu
-                productDetailsContent.innerHTML = `<p class="text-center text-gray-400">Vui lòng chọn một danh mục sản phẩm để xem chi tiết hoặc nhập từ khóa để tìm kiếm.</p>`;
-                return;
+    const keywords = keyword.split(/\s+/);
+    let searchResults = [];
+
+    Object.keys(productDetails).forEach(category => {
+        productDetails[category].forEach(product => {
+            const productText = `${product.name} ${product.description} ${product.features} ${product.applications}`.toLowerCase();
+
+            // Kết hợp text của tất cả variant
+            let variantTextFull = '';
+            if (product.variants) {
+                variantTextFull = product.variants.map(v => Object.values(v).join(' ')).join(' ').toLowerCase();
             }
 
-            let searchResults = [];
-            Object.keys(productDetails).forEach(category => {
-                productDetails[category].forEach(product => {
-                    // Tìm kiếm trong tên, mô tả và đặc điểm
-                    const searchableText = `${product.name} ${product.description} ${product.features} ${product.applications}`.toLowerCase();
-                    if (searchableText.includes(keyword)) {
-                        searchResults.push(product);
-                    }
-                });
-            });
+            // Ghép tổng text
+            const fullText = `${productText} ${variantTextFull}`;
 
-            displayProducts(searchResults, `Kết quả tìm kiếm cho "${keyword}"`);
+            // Sản phẩm phải match tất cả từ khóa ở đâu đó
+            const productMatch = keywords.every(word => fullText.includes(word));
+            if (!productMatch) return;
+
+            let matchedVariants = product.variants || [];
+
+            // Nếu từ khóa chứa thông tin biến thể, lọc variant khớp
+            if (product.variants) {
+                matchedVariants = matchedVariants.filter(variant => {
+                    const variantText = Object.values(variant).join(' ').toLowerCase();
+                    return keywords.every(word => variantText.includes(word) || productText.includes(word));
+                });
+            }
+
+            // Nếu không có variants hoặc variant khớp, đưa vào kết quả
+            if (!product.variants || matchedVariants.length > 0) {
+                searchResults.push({
+                    ...product,
+                    variants: matchedVariants
+                });
+            }
         });
+    });
+
+    if (searchResults.length === 0) {
+        productDetailsContent.innerHTML = `<p class="text-center text-gray-400">Không tìm thấy sản phẩm phù hợp.</p>`;
+    } else {
+        displayProducts(searchResults, `Kết quả tìm kiếm cho "${keyword}"`);
+    }
+});
 
     });
 document.addEventListener("DOMContentLoaded", function() {
