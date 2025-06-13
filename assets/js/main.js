@@ -78,10 +78,11 @@ const productDetails ={
       "applications": "Chiếu sáng dân dụng, trang trí. ",
       "variants": [
         { "power": "3W", "light": "6500K/3000K", "price": "33.000 VND", "lumen": "270", "dimensions_mm": "Φ45*H81" },
-        { "power": "5W", "light": "6500K/3000K", "price": "39.000 VND", "lumen": "450", "dimensions_mm": "Φ60*H109" },
+        { "power": "5W", "light": "6500K/3000K", "price": "39.000 VND", "lumen": "450", "dimensions_mm": "Φ50*H91" },
         { "power": "7W", "light": "6500K/3000K", "price": "47.000 VND", "lumen": "630", "dimensions_mm": "Φ60*H109" },
         { "power": "9W", "light": "6500K/3000K", "price": "53.000 VND", "lumen": "810", "dimensions_mm": "Φ60*H117" },
         { "power": "12W", "light": "6500K/3000K", "price": "63.000 VND", "lumen": "1050", "dimensions_mm": "Φ70*H132" },
+        { "power": "3W", "light": "6500K/3000K", "price": "33.000 VND", "lumen": "270", "dimensions_mm": "Φ70*H13" },
         { "power": "18W", "light": "6500K/3000K", "price": "146.000 VND", "lumen": "1620", "dimensions_mm": "Φ80*H146" },
         { "power": "20W", "light": "6500K/3000K", "price": "178.000 VND", "lumen": "1800", "dimensions_mm": "Φ90*H167" }
       ]
@@ -648,7 +649,7 @@ const productDetails ={
       ]
     }
   ],
-  "Năm Châm Tán Quang Âm Trần": [
+  "Năm châm":[
     {
       "name": "Năm Châm Tán Quang Âm Trần MT20",
       "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg",
@@ -662,8 +663,8 @@ const productDetails ={
         { "power": "18W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "712.000 VND" }
       ]
     }
-  ],
-  "Năm Châm Chiếu Rọi Âm Trần": [
+  ,
+
     {
       "name": "Năm Châm Chiếu Rọi Âm Trần MT20",
       "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg",
@@ -673,9 +674,7 @@ const productDetails ={
       "variants": [
         { "power": "12W", "kích_thước": "1.224*W23.5*H85", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "889.000 VND" }
       ]
-    }
-  ],
-  "Năm Châm Chiếu Rọi Nổi": [
+    },
     {
       "name": "Năm Châm Chiếu Rọi Nổi MT20",
       "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg",
@@ -686,9 +685,7 @@ const productDetails ={
         { "power": "10W", "kích_thước": "L304*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "120°", "price": "457.000 VND" },
         { "power": "20W", "kích_thước": "L604*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "120°", "price": "778.000 VND" }
       ]
-    }
-  ],
-  "Năm Châm Rọi Ray": [
+    },
     {
       "name": "Năm Châm Rọi Ray MT20",
       "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg",
@@ -699,9 +696,7 @@ const productDetails ={
         { "power": "7W", "kích_thước": "D35%L80", "light": "2700K-6000K", "góc_chiếu": "15°/24°/36°", "price": "868.000 VND" },
         { "power": "10W", "kích_thước": "D45%L100", "light": "2700K-6000K", "góc_chiếu": "15°/24°/36°", "price": "1.009.000 VND" }
       ]
-    }
-  ],
-  "Nguồn Năm Châm": [
+    },
     {
       "name": "Nguồn Năm Châm MT20",
       "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg",
@@ -713,6 +708,7 @@ const productDetails ={
         { "power": "200W", "điện_áp_đầu_vào": "AC220V/50Hz", "điện_áp_đầu_ra": "DC48V", "price": "Liên hệ" }
       ]
     }
+  
   ]
 };
 // Hàm để tính toán và định dạng giá đã giảm
@@ -1152,7 +1148,7 @@ y: {
             const initialCategoryLabels = [
                 'Đèn LED Bulb', 'Đèn Tuýp LED', 'Đèn LED Âm Trần', 'Đèn LED Ốp Trần',
                 'Dây LED', 'Đèn Pha LED', 'Đèn Năng Lượng Mặt Trời', 'Đèn Ống Bơ',
-                'Quạt Trần Đèn', 'Đèn Pin'
+                'Quạt Trần Đèn', 'Đèn Pin', 
             ];
 
             let initialCategoryCountsRaw = initialCategoryLabels.map(cat => {
@@ -1403,7 +1399,91 @@ generateLabels: function(chart) {
         document.addEventListener('contextmenu', event => event.preventDefault());
         const productDetails = {
           "Đèn LED Bulb": [
-            { "name": "Đèn LED Bulb tròn", "image": "https://i.ibb.co/p6XYMY9n/den-bulb-led-tron-maxben-18w-247x296.jpg", "description": "Kiểu dáng tròn, thay thế đèn Compact và sợi đốt. Công suất <20W. Đui E27.", "features": "Thiết kế hình tròn nhỏ gọn, thẩm mỹ.  Kết cấu bằng vỏ nhôm bọc lớp nhựa màu trắng cao cấp, khép kín, chống rò điện gây nguy hiểm tới người sử dụng.  Hoạt động với dải điện áp rộng từ 180V-240V, thích ứng được với những nơi có lưới điện thấp hơn 220V, giúp ánh sáng luôn ổn định, bảo vệ mắt người sử dụng cho chống cận và chống mù lòa.  Đa dạng công suất và kích thước bóng đèn.  Công nghệ DOB tối ưu giá thành.  Chuẩn đui phổ thông E27.  Tuổi thọ đạt 15000h chiếu sáng.  Chất lượng ánh sáng cao, ánh sáng trung thực: CRI >80. ", "applications": "Chiếu sáng dân dụng, trang trí. ", "variants": [ { "power": "3W", "light": "6500K/3000K", "price": "33.000 VND", "lumen": "270", "dimensions_mm": "Φ45*H81" }, { "power": "5W", "light": "6500K/3000K", "price": "39.000 VND", "lumen": "450", "dimensions_mm": "Φ60*H109" }, { "power": "7W", "light": "6500K/3000K", "price": "47.000 VND", "lumen": "630", "dimensions_mm": "Φ60*H109" }, { "power": "9W", "light": "6500K/3000K", "price": "53.000 VND", "lumen": "810", "dimensions_mm": "Φ60*H117" }, { "power": "12W", "light": "6500K/3000K", "price": "63.000 VND", "lumen": "1050", "dimensions_mm": "Φ70*H132" }, { "power": "18W", "light": "6500K/3000K", "price": "146.000 VND", "lumen": "1620", "dimensions_mm": "Φ80*H146" }, { "power": "20W", "light": "6500K/3000K", "price": "178.000 VND", "lumen": "1800", "dimensions_mm": "Φ90*H167" } ] },
+            { "name": "Đèn LED Bulb tròn",
+      "image": "https://i.ibb.co/p6XYMY9n/den-bulb-led-tron-maxben-18w-247x296.jpg",
+      "description": "Kiểu dáng tròn, thay thế đèn Compact và sợi đốt. Công suất <20W. Đui E27.",
+      "features": "Thiết kế hình tròn nhỏ gọn, thẩm mỹ. Kết cấu bằng vỏ nhôm bọc lớp nhựa màu trắng cao cấp, khép kín, chống rò điện gây nguy hiểm tới người sử dụng. Hoạt động với dải điện áp rộng từ 180V-240V, thích ứng được với những nơi có lưới điện thấp hơn 220V, giúp ánh sáng luôn ổn định, bảo vệ mắt người sử dụng cho chống cận và chống mù lòa. Đa dạng công suất và kích thước bóng đèn. Công nghệ DOB tối ưu giá thành. Chuẩn đui phổ thông E27. Tuổi thọ đạt 15000h chiếu sáng. Chất lượng ánh sáng cao, ánh sáng trung thực: CRI >80. ",
+      "applications": "Chiếu sáng dân dụng, trang trí. ",
+      "variants": [
+        {
+          "power": "3W",
+          "light": "6500K/3000K",
+          "price": "31.000 VND",
+          "lumen": "270",
+          "dimensions_mm": "Ø45*H81",
+          "Mã Quản Lý": "BE27-MB-A45-3",
+          "Đóng Gói (PCS/M)": "200",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "5W",
+          "light": "6500K/3000K",
+          "price": "39.000 VND",
+          "lumen": "450",
+          "dimensions_mm": "Ø50*H91",
+          "Mã Quản Lý": "BE27-MB-A50-5",
+          "Đóng Gói (PCS/M)": "100",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "7W",
+          "light": "6500K/3000K",
+          "price": "47.000 VND",
+          "lumen": "630",
+          "dimensions_mm": "Ø60*H109",
+          "Mã Quản Lý": "BE27-MB-A60-7",
+          "Đóng Gói (PCS/M)": "100",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "9W",
+          "light": "6500K/3000K",
+          "price": "53.000 VND",
+          "lumen": "810",
+          "dimensions_mm": "Ø60*H109",
+          "Mã Quản Lý": "BE27-MB-A60-9",
+          "Đóng Gói (PCS/M)": "100",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "12W",
+          "light": "6500K/3000K",
+          "price": "63.000 VND",
+          "lumen": "1080",
+          "dimensions_mm": "Ø60*H117",
+          "Mã Quản Lý": "BE27-MB-A60L-12",
+          "Đóng Gói (PCS/M)": "100",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "15W",
+          "light": "6500K/3000K",
+          "price": "73.000 VND",
+          "lumen": "1350",
+          "dimensions_mm": "Ø70*H132",
+          "Mã Quản Lý": "BE27-MB-A70-15",
+          "Đóng Gói (PCS/M)": "100",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "18W",
+          "light": "6500K/3000K",
+          "price": "95.000 VND",
+          "lumen": "1620",
+          "dimensions_mm": "Ø80*H146",
+          "Mã Quản Lý": "BE27-MB-A80-18",
+          "Đóng Gói (PCS/M)": "100",
+          "Điện áp": "AC180-250V 50/60Hz"
+        },
+        {
+          "power": "20W",
+          "light": "6500K/3000K",
+          "price": "116.000 VND",
+          "lumen": "1800",
+          "dimensions_mm": "Ø90*H187",
+          "Mã Quản Lý": "BE27-MB-A95-20",
+          "Đóng Gói (PCS/M)": "24",
+          "Điện áp": "AC180-250V 50/60Hz" } ] },
             { "name": "Đèn LED Bulb trụ Happy", "image": "https://i.ibb.co/VWtKYKDH/bong-den-led-tru-happy-247x296.jpg", "description": "Kiểu dáng trụ, thay thế đèn Compact và sợi đốt. Công suất ≥20W.  Đui E27.", "features": "Vỏ đèn thân nhôm bọc nhựa được kiểm định không biến dạng trong buồng nhiệt độ giả định -40°C và 120°C.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao 90lm/W, độ hoàn màu CRI>80.  Vỏ đèn có hàm lượng nhôm cao giúp tản nhiệt tốt và nhanh cho chip LED, độ bền ánh sáng tăng 30% so với thiết kế thông thường.  An toàn khi sử dụng, không gây cháy nổ: Driver đèn led bulb có điện trở cầu chì, khi có bất ổn từ lưới điện như sét đánh vào lưới điện, dây cầu chì sẽ đứt ngăn chặn cháy nổ do hiện tượng ngắn mạch.  Bộ phận khuếch tán của được làm từ chất liệu nhựa PC – loại nhựa có thể chịu được nhiệt độ cao lên tới 137°C, khả năng phát ra ánh sáng đạt >90%, khả năng cách điện và chống cháy cực tốt.  Sử dụng chip led 2835 siêu bền, CRI>80 mang đến màu sắc trung thực và bảo vệ thị lực người dùng.  Tiết kiệm điện năng: Bóng đèn led bulb trụ giúp tiết kiệm 80% điện năng so với đèn sợi đốt và 50% so với đèn compact.  Không tạo ra khí CO2 hoặc các tia gây hại như cực tím, UV, hồng ngoại bức xạ...an toàn cho làn da, người già, trẻ nhỏ, người cần dưỡng bệnh. ", "applications": "Chiếu sáng dân dụng, trang trí.", "variants": [ { "power": "20W", "light": "6500K", "price": "69.000 VND", "lumen": "1800", "dimensions_mm": "Φ90*H143" }, { "power": "30W", "light": "6500K", "price": "109.000 VND", "lumen": "2700", "dimensions_mm": "Φ102*H178" }, { "power": "40W", "light": "6500K/3000K", "price": "139.000 VND", "lumen": "3800", "dimensions_mm": "Φ117*H200" }, { "power": "50W", "light": "6500K/3000K", "price": "189.000 VND", "lumen": "4500", "dimensions_mm": "Φ137*H230" } ] }
           ],
           "Đèn Tuýp LED": [ { "name": "Đèn tuýp LED T8", "image": "https://i.ibb.co/0VQgyQ1V/den-tuyp-led-t8-maxben-45w-1-247.png", "description": "Tuýp dài 0.6/1.2m, nhiều bóng led nhỏ.  Thay thế đèn huỳnh quang.", "features": "Hiệu suất phát sáng cao 100lm/W, CRI>80.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Sử dụng ống thủy tinh có độ bền cao và khả năng xuyên sáng tốt.  Chuẩn đui đèn thông dụng thay thế cho đèn huỳnh quang cũ.  Tuổi thọ cao lên tới 30000H.  Lâu giảm sáng.  Chứa linh kiện tụ cao áp giúp chống những bất thường từ lưới điện gây hỏng đèn.  Không chứa thủy ngân như đèn huỳnh quang, không tạo ra khí CO2 hoặc các tia gây hại như cực tím, UV, hồng ngoại bức xạ...an toàn cho làn da, người già, trẻ nhỏ, người cần dưỡng bệnh. ", "applications": "Chiếu sáng cho nhà ở: Đèn tuýp led T8 Maxben có thể được lắp đặt trong phòng khách, phòng ngủ, phòng bếp và phòng tắm để tạo ra ánh sáng trang nhã và giảm thiểu tiêu thụ điện năng.  Chiếu sáng cho văn phòng.  Chiếu sáng cho siêu thị và cửa hàng.  Chiếu sáng cho nhà để xe và tầng hầm.  Chiếu sáng cho các khu vực công nghiệp. ", "variants": [ { "power": "9W", "light": "6500K", "price": "78.000 VND", "lumen": "900", "dimensions_mm": "D610*Φ35" }, { "power": "18W", "light": "6500K", "price": "86.000 VND", "lumen": "1700", "dimensions_mm": "D1210*Φ35" }, { "power": "28W", "light": "6500K", "price": "118.000 VND", "lumen": "2800", "dimensions_mm": "D1210*Φ35" }, { "power": "45W", "light": "6500K", "price": "149.000 VND", "lumen": "4500", "dimensions_mm": "D1210*Φ35" } ] }, { "name": "Đèn tuýp LED bán nguyệt", "image": "https://i.ibb.co/PzsVJwHj/den-tuyp-led-ban-nguyet-maxben-1.png", "description": "Đèn LED bán nguyệt, thiết kế tiện dụng.", "features": "Hiệu suất phát sáng cao 100lm/W, CRI>80.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Tuổi thọ cao lên tới 30000H.  Lâu giảm sáng.  Mặt khuếch tán PC độ xuyên sáng cao giúp ánh sáng tán quang đều, mịn.  Góc chiều rộng giúp chiếu sáng đến các ngóc ngách nhỏ nhất, hạn chế để lại điểm tối.  Bền bỉ: Cấu trúc đèn chắc chắn, cầm chắc tay, bền hơn với thời gian.  Mặt khuếch tán: Nhựa PC độ xuyên sáng >90%.  Chip led: Chip SMD Seoul hiệu suất phát sáng cao, lâu giảm sáng.  Driver - bộ nguồn chuyển đổi dòng điện ổn định, chống xung áp cao.  Thân đèn bằng hợp kim nhôm hàm lượng cao giúp tản nhiệt hiệu quả.  Hiện đại: Sử dụng chip LED Seoul Hàn Quốc thế hệ mới nhất cho ra hiệu suất chiếu sáng cao, chỉ số hoàn màu cao.  Tiện dụng: Nẹp lắp đặt dễ dàng tháo ra và di chuyển, bộ phụ kiện đi kèm nên có thể tự lắp đặt tại nhà. ", "applications": "Văn phòng, cửa hàng, siêu thị, nhà kho, nhà xưởng, gia đình, khu vực y tế.", "variants": [ { "power": "20W", "light": "6500K", "kích_thước": "D600*R74*H24", "price": "187.000 VND", "lumen": "2000" }, { "power": "40W", "light": "6500K", "kích_thước": "D1200*R74*H24", "price": "262.000 VND", "lumen": "4000" } ] }, { "name": "Đèn tuýp LED bán nguyệt oval", "image": "https://i.ibb.co/Gvn01MxZ/den-led-ban-nguyet-oval-maxben-1.png", "description": "Thiết kế hình vòm cong bán nguyệt Oval.", "features": "Hiệu suất phát sáng cao 100lm/W, CRI>80.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Tuổi thọ cao lên tới 30000H.  Lâu giảm sáng.  Mặt khuếch tán PC độ xuyên sáng cao giúp ánh sáng tán quang đều, mịn.  Góc chiếu rộng giúp chiếu sáng đến các ngóc ngách nhỏ nhất, hạn chế để lại điểm tối.  Bền bỉ: Cấu trúc đèn chắc chắn, cầm chắc tay, bền hơn với thời gian.  Mặt khuếch tán: Nhựa PC độ xuyên sáng >90%.  Chip led: Chip SMD Seoul hiệu suất phát sáng cao, lâu giảm sáng.  Driver - bộ nguồn chuyển đổi dòng điện ổn định, chống xung áp cao.  Thân đèn bằng hợp kim nhôm hàm lượng cao giúp tản nhiệt hiệu quả.  Hiện đại: Sử dụng chip LED Seoul Hàn Quốc thế hệ mới nhất cho ra hiệu suất chiếu sáng cao, chỉ số hoàn màu cao.  Tiện dụng: Nẹp lắp đặt dễ dàng tháo ra và di chuyển, bộ phụ kiện đi kèm nên có thể tự lắp đặt tại nhà. ", "applications": "Văn phòng, cửa hàng, siêu thị, nhà kho, nhà xưởng, gia đình, khu vực y tế.", "variants": [ { "power": "20W", "light": "6500K", "kích_thước": "D600*R60*H30", "price": "199.000 VND", "lumen": "1900" }, { "power": "40W", "light": "6500K", "kích_thước": "D1200*R60*H30", "price": "262.000 VND", "lumen": "3800" }, { "power": "60W", "light": "6500K", "kích_thước": "D1200*R60*H30", "price": "389.000 VND", "lumen": "6000" }, { "power": "70W", "light": "6500K", "kích_thước": "D1200*R85*H30", "price": "459.000 VND", "lumen": "6650" } ] }, { "name": "Đèn tuýp LED bán nguyệt (Compact)", "image": "https://i.ibb.co/z6680327007157_ceacf3d562ca12cc0dcf583db47207fc.jpg", "description": "Đèn LED bán nguyệt loại Compact, thiết kế tiện dụng.", "features": "Hiệu suất phát sáng cao 100lm/W, CRI>80.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Tuổi thọ cao lên tới 25000H.  Lâu giảm sáng.  Hiệu quả: Mặt khuếch tán PC độ xuyên sáng cao giúp ánh sáng tán quang đều, mịn.  Góc chiếu rộng giúp chiếu sáng đến các ngóc ngách nhỏ nhất, hạn chế để lại điểm tối.  Bền bỉ: Cấu trúc đèn chắc chắn, cầm chắc tay, bền hơn với thời gian.  Mặt khuếch tán: Nhựa PC độ xuyên sáng >90%.  Chip led: Chip 2835 với hiệu suất phát sáng cao, lâu giảm sáng.  Driver - bộ nguồn chuyển đổi dòng điện ổn định, chống xung áp cao.  Thân đèn bằng hợp kim nhôm hàm lượng cao giúp tản nhiệt hiệu quả.  Hiện đại: Kích thước nhỏ gọn tạo sự tinh tế cho sản phẩm trong khi vẫn đáp ứng chiếu sáng không gian tốt.  Tiện dụng: Nẹp lắp đặt dễ dàng tháo ra và di chuyển, bộ phụ kiện đi kèm nên có thể tự lắp đặt tại nhà. ", "applications": "Văn phòng, cửa hàng, siêu thị, nhà kho, nhà xưởng, gia đình, khu vực y tế.", "variants": [ { "power": "45W", "light": "6500K/4000K", "kích_thước": "1200*68*29", "price": "270.000 VND", "lumen": "4500" }, { "power": "70W", "light": "6500K", "kích_thước": "1200*75*29", "price": "399.000 VND", "lumen": "7000" } ] } ],
@@ -1423,15 +1503,15 @@ generateLabels: function(chart) {
           ],
           "Đèn Pin": [ { "name": "Đèn pin đội đầu 303", "image": "https://i.ibb.co/FSNKLZw/n-pin-303.jpg", "description": "Đèn pin đội đầu, sử dụng pin sạc.", "features": "Dung lượng pin lớn, sạc nhanh chỉ 6-8 giờ.  Thời gian chiếu sáng lên đến 12h liên tục chỉ sau 1 lần sạc.  Thiết kế nhỏ gọn, có thể điều chỉnh góc chiếu linh hoạt.  Dây đeo đội đầu bằng vải thun co giãn phù hợp cho mọi người sử dụng.  2 chế độ sáng: chiếu xa và chiếu gần. ", "applications": "Chiếu sáng khi đi cắm trại, leo núi, sửa chữa.", "variants": [ { "battery": "3.6V - 2400mA", "charger": "4.2V - 600mA", "light": "6500K/3000K", "price": "173.000 VND" } ] }, { "name": "Đèn pin đội đầu 304", "image": "https://i.ibb.co/B5rqtL2X/den-pin-304.png", "description": "Đèn pin đội đầu, sử dụng pin sạc.  Cải tiến từ 303.", "features": "Dung lượng pin lớn, sạc nhanh chỉ 6-8 giờ.  Thời gian chiếu sáng lên đến 12h liên tục chỉ sau 1 lần sạc.  Thiết kế nhỏ gọn, có thể điều chỉnh góc chiếu linh hoạt.  Dây đeo đội đầu bằng vải thun co giãn phù hợp cho mọi người sử dụng.  3 chế độ sáng: chiếu xa, chiếu gần, nháy cảnh báo. ", "applications": "Chi chiếu sáng khi đi cắm trại, leo núi, sửa chữa.", "variants": [ { "battery": "3.6V-3600mA", "charger": "4.2V - 800mA", "light": "6500K/3000K", "price": "224.000 VND" } ] }, { "name": "Đèn pin đội đầu T6", "image": "https://i.ibb.co/0y8r5VnZ/Den-Pin-T6.png", "description": "Đèn pin đội đầu, sử dụng pin sạc, chip LED T6. ", "features": "Dung lượng pin lớn, sạc nhanh chỉ 6-8 giờ.  Thời gian chiếu sáng lên đến 12h liên tục chỉ sau 1 lần sạc.  Thiết kế nhỏ gọn, có thể điều chỉnh góc chiếu linh hoạt.  Dây đeo đội đầu bằng vải thun co giãn phù hợp cho mọi người sử dụng.  3 chế độ sáng: chiếu xa, chiếu gần, nháy cảnh báo. ", "applications": "Chiếu sáng khi đi cắm trại, leo núi, sửa chữa, tuần tra.", "variants": [ { "battery": "3.6V-5200mA", "charger": "4.2V - 800mA", "light": "6500K/3000K", "price": "542.000 VND" } ] }, { "name": "Đèn pin cầm tay NLMT JO2", "image": "https://i.postimg.cc/LhFYrLtq/page110-img2.jpg", "description": "Đèn pin cầm tay, sử dụng năng lượng mặt trời và pin sạc.", "features": "Dung lượng pin lớn, sạc nhanh chỉ 6-8 giờ.  Thời gian chiếu sáng lên đến 12h liên tục chỉ sau 1 lần sạc.  Thiết kế nhỏ gọn, có thể điều chỉnh góc chiếu linh hoạt.  Dây đeo đội đầu bằng vải thun co giãn phù hợp cho mọi người sử dụng.  4 chế độ sáng: chiếu xa, chiếu gần, nháy cảnh báo, ánh sáng tỏa.  2 hình thức sạc: sạc bằng USB và sạc bằng tấm pin NLMT. ", "applications": "Chiếu sáng khi đi cắm trại, leo núi, sửa chữa, sử dụng hàng ngày.", "variants": [ { "battery": "3.6V-1800mA", "charger": "USB/Solar", "light": "6500K/3000K", "price": "201.000 VND" } ] }
           ],
-          "Năm Châm Tán Quang Âm Trần": [ { "name": "Năm Châm Tán Quang Âm Trần MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm tán quang âm trần.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 24°/36°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "6W", "kích_thước": "1.020*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "349.000 VND" }, { "power": "9W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "446.000 VND" }, { "power": "12W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "712.000 VND" }, { "power": "18W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "712.000 VND" } ] }
-          ],
-          "Năm Châm Chiếu Rọi Âm Trần": [ { "name": "Năm Châm Chiếu Rọi Âm Trần MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm chiếu rọi âm trần.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 24°/36°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "12W", "kích_thước": "1.224*W23.5*H85", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "889.000 VND" } ] }
-          ],
-          "Năm Châm Chiếu Rọi Nổi": [ { "name": "Năm Châm Chiếu Rọi Nổi MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm chiếu rọi nổi.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 120°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "10W", "kích_thước": "L304*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "120°", "price": "457.000 VND" }, { "power": "20W", "kích_thước": "L604*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "120°", "price": "778.000 VND" } ] }
-          ],
-          "Năm Châm Rọi Ray": [ { "name": "Năm Châm Rọi Ray MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm rọi ray.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 15°/24°/36°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "7W", "kích_thước": "D35%L80", "light": "2700K-6000K", "góc_chiếu": "15°/24°/36°", "price": "868.000 VND" }, { "power": "10W", "kích_thước": "D45%L100", "light": "2700K-6000K", "góc_chiếu": "15°/24°/36°", "price": "1.009.000 VND" } ] }
-          ],
-          "Nguồn Năm Châm": [ { "name": "Nguồn Năm Châm MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Nguồn cấp điện cho năm châm.", "features": "Điện áp đầu vào 220V/50Hz, điện áp đầu ra DC48V.", "applications": "Cấp điện cho hệ thống năm châm.", "variants": [ { "power": "100W", "điện_áp_đầu_vào": "AC220V/50Hz", "điện_áp_đầu_ra": "DC48V", "price": "Liên hệ" }, { "power": "200W", "điện_áp_đầu_vào": "AC220V/50Hz", "điện_áp_đầu_ra": "DC48V", "price": "Liên hệ" } ] }
+          "Năm châm": [ { "name": "Năm Châm Tán Quang Âm Trần MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm tán quang âm trần.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 24°/36°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "6W", "kích_thước": "1.020*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "349.000 VND" }, { "power": "9W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "446.000 VND" }, { "power": "12W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "712.000 VND" }, { "power": "18W", "kích_thước": "1.138*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "712.000 VND" } ] }
+          ,
+          { "name": "Năm Châm Chiếu Rọi Âm Trần MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm chiếu rọi âm trần.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 24°/36°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "12W", "kích_thước": "1.224*W23.5*H85", "light": "2700K-6000K", "góc_chiếu": "24°/36°", "price": "889.000 VND" } ] }
+          ,
+          { "name": "Năm Châm Chiếu Rọi Nổi MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm chiếu rọi nổi.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 120°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "10W", "kích_thước": "L304*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "120°", "price": "457.000 VND" }, { "power": "20W", "kích_thước": "L604*W23.5*H44", "light": "2700K-6000K", "góc_chiếu": "120°", "price": "778.000 VND" } ] }
+          ,
+          { "name": "Năm Châm Rọi Ray MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Năm châm rọi ray.", "features": "CRI >90, dải điện áp DC48V, tuổi thọ 30000H, góc chiếu 15°/24°/36°.", "applications": "Chiếu sáng dân dụng, thương mại.", "variants": [ { "power": "7W", "kích_thước": "D35%L80", "light": "2700K-6000K", "góc_chiếu": "15°/24°/36°", "price": "868.000 VND" }, { "power": "10W", "kích_thước": "D45%L100", "light": "2700K-6000K", "góc_chiếu": "15°/24°/36°", "price": "1.009.000 VND" } ] }
+          ,
+           { "name": "Nguồn Năm Châm MT20", "image": "https://i.postimg.cc/z6680207206820_71faa5d082fafd27cf07b9a910e91991.jpg", "description": "Nguồn cấp điện cho năm châm.", "features": "Điện áp đầu vào 220V/50Hz, điện áp đầu ra DC48V.", "applications": "Cấp điện cho hệ thống năm châm.", "variants": [ { "power": "100W", "điện_áp_đầu_vào": "AC220V/50Hz", "điện_áp_đầu_ra": "DC48V", "price": "Liên hệ" }, { "power": "200W", "điện_áp_đầu_vào": "AC220V/50Hz", "điện_áp_đầu_ra": "DC48V", "price": "Liên hệ" } ] }
           ]
         };
 
@@ -1444,45 +1524,63 @@ generateLabels: function(chart) {
          * Hàm này sẽ được cả chức năng xem danh mục và tìm kiếm sử dụng
          */
         function createProductCardHtml(product) {
-            let cardHtml = `
-                <div class="product-card bg-gray-700/30 p-4 rounded-lg mb-4">
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 mb-4">
-                        ${product.image ? `<img src="${product.image}" alt="${product.name}" class="w-48 h-48 object-contain flex-shrink-0 rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/300x200/232946/B8C1EC?text=Không có ảnh';">` : ''}
-                        <div class="flex-1 flex-grow">
-                            <p class="text-lg font-medium text-white mb-1">${product.name}</p>
-                            <p class="text-sm text-gray-300 mb-1"><strong>Mô tả:</strong> ${product.description}</p>
-                            <p class="text-sm text-gray-300 mb-1"><strong>Đặc điểm:</strong> ${product.features}</p>
-                            <p class="text-sm text-gray-300 mb-1"><strong>Ứng dụng:</strong> ${product.applications}</p>
-                        </div>
-                    </div>`;
+    let cardHtml = `
+        <div class="product-card bg-gray-700/30 p-4 rounded-lg mb-4">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-4 mb-4">
+                ${product.image ? `<img src="${product.image}" alt="${product.name}" class="w-48 h-48 object-contain flex-shrink-0 rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/300x200/232946/B8C1EC?text=Không có ảnh';">` : ''}
+                <div class="flex-1 flex-grow">
+                    <p class="text-lg font-medium text-white mb-1">${product.name}</p>
+                    <p class="text-sm text-gray-300 mb-1"><strong>Mô tả:</strong> ${product.description}</p>
+                    <p class="text-sm text-gray-300 mb-1"><strong>Đặc điểm:</strong> ${product.features}</p>
+                    <p class="text-sm text-gray-300 mb-1"><strong>Ứng dụng:</strong> ${product.applications}</p>
+                </div>
+            </div>`;
 
-            if (product.variants && product.variants.length > 0) {
-                const allKeys = new Set();
-                product.variants.forEach(variant => {
-                    Object.keys(variant).forEach(key => allKeys.add(key));
-                });
-                const headers = Array.from(allKeys);
+    if (product.variants && product.variants.length > 0) {
+        const allKeys = new Set();
+        product.variants.forEach(variant => {
+            Object.keys(variant).forEach(key => allKeys.add(key));
+        });
+        const headers = Array.from(allKeys);
 
-                cardHtml += `<table class="product-table"><thead><tr>`;
-                headers.forEach(header => {
-                    // Chuyển đổi tên cột cho dễ đọc
-                    let headerText = header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                    cardHtml += `<th>${headerText}</th>`;
-                });
-                cardHtml += `</tr></thead><tbody>`;
+        cardHtml += `
+        <div class="hidden md:block overflow-x-auto">
+            <table class="product-table w-full text-sm text-white border border-gray-600">
+                <thead class="bg-gray-800">
+                    <tr>
+                        ${headers.map(header => `<th class="px-2 py-2 border-b border-gray-600 text-left whitespace-nowrap">${header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</th>`).join('')}
+                    </tr>
+                </thead>
+                <tbody>
+                    ${product.variants.map(variant => `
+                        <tr>
+                            ${headers.map(header => `<td class="px-2 py-2 border-b border-gray-700 whitespace-nowrap">${variant[header] !== undefined ? variant[header] : 'N/A'}</td>`).join('')}
+                        </tr>`).join('')}
+                </tbody>
+            </table>
+        </div>
 
-                product.variants.forEach(variant => {
-                    cardHtml += `<tr>`;
-                    headers.forEach(header => {
-                        cardHtml += `<td>${variant[header] !== undefined ? variant[header] : 'N/A'}</td>`;
-                    });
-                    cardHtml += `</tr>`;
-                });
-                cardHtml += `</tbody></table>`;
-            }
-            cardHtml += `</div>`;
-            return cardHtml;
-        }
+        <div class="md:hidden flex flex-col gap-4">
+            ${product.variants.map((variant, index) => `
+                <div class="bg-gray-800/50 rounded-lg p-4 shadow">
+                    <p class="text-red-400 text-sm font-semibold mb-3">Phân loại #${index + 1}</p>
+                    <dl class="space-y-2">
+                        ${headers.map(header => `
+                            <div class="flex justify-between">
+                                <dt class="text-gray-400 text-sm font-medium">${header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</dt>
+                                <dd class="text-gray-200 text-sm">${variant[header] !== undefined ? variant[header] : 'N/A'}</dd>
+                            </div>
+                        `).join('')}
+                    </dl>
+                </div>
+            `).join('')}
+        </div>`;
+    }
+
+    cardHtml += `</div>`;
+    return cardHtml;
+}
+
 
         /**
          * HÀM CẬP NHẬT: HIỂN THỊ DANH SÁCH SẢN PHẨM
