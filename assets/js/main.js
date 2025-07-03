@@ -5343,61 +5343,83 @@ function createProductCardHtml(product) {
     const headers = Array.from(allKeys);
 
     let cardHtml = `<div class="product-card bg-gray-700/30 p-4 rounded-lg mb-4">
- <div class="flex flex-col md:flex-row items-center md:items-start gap-4 mb-4">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-4 mb-4">
             ${product.image ? `<img src="${product.image}" alt="${product.name}" class="w-48 h-48 object-contain flex-shrink-0 rounded-lg shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/300x200/232946/B8C1EC?text=Không có ảnh';">` : `<div class='w-48 h-48 flex items-center justify-center bg-gray-600 rounded-lg'>Không có ảnh</div>`}
             <div class="flex-1 flex-grow">
-                <p class="text-lg font-medium text-white mb-1">${product.name}</p>
-                <p class="text-sm text-gray-300 mb-1"><strong>Mô tả:</strong> ${product.description || 'N/A'}</p>
-                <p class="text-sm text-gray-300 mb-1"><strong>Đặc điểm:</strong> ${product.features || 'N/A'}</p>
-                <p class="text-sm text-gray-300 mb-1"><strong>Ứng dụng:</strong> ${product.applications || 'N/A'}</p>
+                <p class="text-lg font-medium text-white mb-2">${product.name}</p>
+                <dl class="text-sm text-gray-300 space-y-1 mb-2">
+                    <div class="flex">
+                        <dt class="font-semibold mr-2 min-w-[60px]">Mô tả:</dt>
+                        <dd>${product.description || 'N/A'}</dd>
+                    </div>
+                    <div class="flex">
+                        <dt class="font-semibold mr-2 min-w-[60px]">Ứng dụng:</dt>
+                        <dd>${product.applications || 'N/A'}</dd>
+                    </div>
+                </dl>
+                <div class="text-sm text-gray-300">
+                    <p class="font-semibold mb-1">Đặc điểm:</p>
+                    <ul class="list-disc list-inside text-sm text-gray-300 space-y-1 pl-4"> 
+                        ${product.features ? product.features.split('. ').filter(f => f.trim() !== '').map(feature => `<li>${feature.trim()}.</li>`).join('') : '<li>N/A</li>'}
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="hidden md:block overflow-x-auto">
-            <table class="product-table w-full text-sm text-white border border-gray-600">
-                <thead class="bg-gray-800">
-                    <tr>
-                        ${headers.map(header => `<th class="px-2 py-2 border-b border-gray-600 text-left whitespace-nowrap">${header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</th>`).join('')}
-                    </tr>
-                </thead>
-                <tbody>
-                    ${product.variants.map(variant => `
-                        <tr>
-                            ${headers.map(header => {
-                                if (header === 'price') {
-                                    const original = parseInt(variant.price.replace(/[^0-9]/g, ''), 10);
-                                    const discounted = Math.round(original * 0.55).toLocaleString('vi-VN') + ' VND';
-                                    return `<td class="px-2 py-2 border-b border-gray-700 whitespace-nowrap">
-                                                <span class="line-through text-gray-400 mr-2">${variant.price}</span>
-                                                <span class="text-red-400 font-semibold">${discounted}</span>
-                                            </td>`;
-                                } else {
-                                    return `<td class="px-2 py-2 border-b border-gray-700 whitespace-nowrap">${variant[header] !== undefined ? variant[header] : 'N/A'}</td>`;
-                                }
-                            }).join('')}
-                        </tr>`).join('')}
-                </tbody>
-            </table>
-        </div>
 
-        <div class="md:hidden flex flex-col gap-4">
-            ${product.variants.map((variant, index) => `
-                <div class="bg-gray-800/50 rounded-lg p-4 shadow">
-                    <p class="text-red-400 text-sm font-semibold mb-3">Phân loại #${index + 1}</p>
-                    <dl class="space-y-2">
-                        ${headers.map(header => `
-                            <div class="flex justify-between">
-                                <dt class="text-gray-400 text-sm font-medium">${header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</dt>
-                                <dd class="text-gray-200 text-sm">
-                                    ${header === 'price'
-                                        ? `<span class="line-through text-gray-400 mr-2">${variant.price}</span>
-                                           <span class="text-red-400 font-semibold">
-                                             ${Math.round(parseInt(variant.price.replace(/[^0-9]/g, ''), 10) * 0.55).toLocaleString('vi-VN')} VND
-                                           </span>`
-                                        : (variant[header] !== undefined ? variant[header] : 'N/A')}
-                                </dd>
-                            </div>`).join('')}
-                    </dl>
-                </div>`).join('')}
+        <div class="product-tabs mb-4">
+            <div class="flex border-b border-gray-600">
+                <button class="tab-button px-4 py-2 text-sm font-medium text-white border-b-2 border-transparent hover:border-blue-500 active-tab-class" data-tab="technical-specs-${product.id}">Thông số kỹ thuật</button>
+            </div>
+
+            <div id="technical-specs-${product.id}" class="tab-content pt-4 active-content-class">
+                <div class="hidden md:block overflow-x-auto">
+                    <table class="product-table w-full text-sm text-white border border-gray-600">
+                        <thead class="bg-gray-800">
+                            <tr>
+                                ${headers.map(header => `<th class="px-2 py-2 border-b border-gray-600 text-left whitespace-nowrap">${header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</th>`).join('')}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${product.variants.map(variant => `
+                                <tr>
+                                    ${headers.map(header => {
+                                        if (header === 'price') {
+                                            const original = parseInt(variant.price.replace(/[^0-9]/g, ''), 10);
+                                            const discounted = Math.round(original * 0.55).toLocaleString('vi-VN') + ' VND';
+                                            return `<td class="px-2 py-2 border-b border-gray-700 whitespace-nowrap">
+                                                        <span class="line-through text-gray-400 mr-2">${variant.price}</span>
+                                                        <span class="text-red-400 font-semibold">${discounted}</span>
+                                                    </td>`;
+                                        } else {
+                                            return `<td class="px-2 py-2 border-b border-gray-700 whitespace-nowrap">${variant[header] !== undefined ? variant[header] : 'N/A'}</td>`;
+                                        }
+                                    }).join('')}
+                                </tr>`).join('')}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="md:hidden flex flex-col gap-4">
+                    ${product.variants.map((variant, index) => `
+                        <div class="bg-gray-800/50 rounded-lg p-4 shadow">
+                            <p class="text-red-400 text-sm font-semibold mb-3">Phân loại #${index + 1}</p>
+                            <dl class="space-y-2">
+                                ${headers.map(header => `
+                                    <div class="flex justify-between">
+                                        <dt class="text-gray-400 text-sm font-medium">${header.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</dt>
+                                        <dd class="text-gray-200 text-sm">
+                                            ${header === 'price'
+                                                ? `<span class="line-through text-gray-400 mr-2">${variant.price}</span>
+                                                   <span class="text-red-400 font-semibold">
+                                                      ${Math.round(parseInt(variant.price.replace(/[^0-9]/g, ''), 10) * 0.55).toLocaleString('vi-VN')} VND
+                                                   </span>`
+                                                : (variant[header] !== undefined ? variant[header] : 'N/A')}
+                                        </dd>
+                                    </div>`).join('')}
+                            </dl>
+                        </div>`).join('')}
+                </div>
+            </div>
         </div>
     </div>`;
 
