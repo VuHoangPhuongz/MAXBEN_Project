@@ -193,8 +193,8 @@
                 "lumen": "6650"
             }]
         }, {
-            "name": "Đèn tuýp LED bán nguyệt (Compact)",
-            "image": "https://i.ibb.co/z6680327007157_ceacf3d562ca12cc0dcf583db47207fc.jpg",
+            "name": "Đèn tuýp LED bán nguyệt tiêu chuẩn",
+            "image": "./icons/MB - Đèn Tuýp LED Bán Nguyệt Oval 2.png",
             "description": "Đèn LED bán nguyệt loại Compact, thiết kế tiện dụng.",
             "features": "Hiệu suất phát sáng cao 100lm/W, CRI>80.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Tuổi thọ cao lên tới 25000H.  Lâu giảm sáng.  Hiệu quả: Mặt khuếch tán PC độ xuyên sáng cao giúp ánh sáng tán quang đều, mịn.  Góc chiếu rộng giúp chiếu sáng đến các ngóc ngách nhỏ nhất, hạn chế để lại điểm tối.  Bền bỉ: Cấu trúc đèn chắc chắn, cầm chắc tay, bền hơn với thời gian.  Mặt khuếch tán: Nhựa PC độ xuyên sáng >90%.  Chip led: Chip 2835 với hiệu suất phát sáng cao, lâu giảm sáng.  Driver - bộ nguồn chuyển đổi dòng điện ổn định, chống xung áp cao.  Thân đèn bằng hợp kim nhôm hàm lượng cao giúp tản nhiệt hiệu quả.  Hiện đại: Kích thước nhỏ gọn tạo sự tinh tế cho sản phẩm trong khi vẫn đáp ứng chiếu sáng không gian tốt.  Tiện dụng: Nẹp lắp đặt dễ dàng tháo ra và di chuyển, bộ phụ kiện đi kèm nên có thể tự lắp đặt tại nhà. ",
             "applications": "Văn phòng, cửa hàng, siêu thị, nhà kho, nhà xưởng, gia đình, khu vực y tế.",
@@ -323,7 +323,7 @@
             }]
         }, {
             "name": "Đèn LED âm trần Lucy Pro",
-            "image": "https://i.postimg.cc/z6680327905736_1bfd84e61816987a48ce013520767231.jpg",
+            "image": "./icons/den-led-am-tran-lucy-01-247x296_3_11zon.webp",
             "description": "Đèn LED âm trần ánh sáng tỏa, thiết kế tròn.  Cải tiến từ Lucy.",
             "features": "Mặt tản quang PC với độ xuyên sáng 82%.  Dải điện áp 170V-240V phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao 85 Lm/W.  Độ hoàn màu CRI>90 tạo ánh sáng chân thực và tốt cho mắt người.  Vỏ nhôm hàm lượng cao giúp tản nhiệt tối ưu cho chip LED.  Công nghệ DOB giúp tối ưu giá thành.  Thiết kế viền vàng, bạc và trắng khác biệt với thị trường, tạo điểm nhấn.  Không sử dụng thủy ngân cũng không phát ra tia cực tím, CO2 nên vô cùng an toàn.  Ánh sáng ổn định và không bị nhấp nháy, bảo vệ mắt tốt và chống lóa mỏi mắt.  Cắt lỗ siêu nhỏ 85 -115mm, tiết kiệm không gian trần. ",
             "applications": "Chiếu sáng dân dụng, văn phòng.",
@@ -421,7 +421,7 @@
             }]
         }, {
             "name": "Đèn Âm Trần SPOTLIGHT PROLUX-SPX1",
-            "image": "https://i.ibb.co/z6580001258305-40726bb390c2260965b7de16ad1aea0b-247x296.jpg",
+            "image": "./icons/prolux SPX1.png",
             "description": "Đèn âm trần chiếu điểm, nhiều góc chiếu và nhiệt độ màu. ",
             "features": "Dải điện áp 85V-265V phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao >85lm/W.  Độ hoàn màu CRI>98 tạo ánh sáng chân thực, không gian sống động và tốt cho mắt người.  Ánh sáng tỏa góc chiếu linh hoạt 15/24/36/60 độ, dễ dàng điều chỉnh theo nhu cầu sử dụng.  Chip RG1 Hạn chế ánh sáng xanh gây hại cho mắt.  Công nghệ chống chói UGR<6, tích hợp chức năng ẩn nguồn sáng và điều khiển màu sáng.  Không chói không nhòe, không gây nhức mỏi mắt.  Vỏ nhôm đúc bền, tản nhiệt tốt.  Không phát tia UV, tia hồng ngoại, không chứa thủy ngân - an toàn cho sức khỏe gia đình. ",
             "applications": "Chiếu sáng dân dụng, trang trí, văn phòng, cửa hàng.",
@@ -565,7 +565,7 @@
             }]
         }, {
             "name": "Đèn Âm Trần SPOTLIGHT PROLUX-SP2",
-            "image": "https://i.postimg.cc/z6680206762090_7805fe014290f3e7a4f5a2eae89eeb3.jpg",
+            "image": "./icons/Prolux SP2.png",
             "description": "Đèn âm trần chiếu điểm, nhiều góc chiếu và nhiệt độ màu. ",
             "features": "Dải điện áp 85V-265V phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao >85lm/W.  Độ hoàn màu CRI>98 tạo ánh sáng chân thực, không gian sống động và tốt cho mắt người.  Ánh sáng tỏa góc chiếu linh hoạt 15/24/36 độ, dễ dàng điều chỉnh theo nhu cầu sử dụng.  Chip RG1 Hạn chế ánh sáng xanh gây hại cho mắt.  Công nghệ chống chói UGR<6, tích hợp chức năng ẩn nguồn sáng và điều khiển màu sáng.  Không chói không nhòe, không gây nhức mỏi mắt.  Vỏ nhôm đúc bền, tản nhiệt tốt.  Kiểu dáng nhỏ gọn, sang trọng, hòa hợp với mọi không gian từ hiện đại đến tối giản. ",
             "applications": "Chiếu sáng dân dụng, trang trí, văn phòng, cửa hàng.",
@@ -696,7 +696,7 @@
             }]
         }, {
             "name": "Đèn Âm Trần SPOTLIGHT PRO LUX-T",
-            "image": "https://i.postimg.cc/z6680207320657_02cb5d2cff5f3c2488c13520f5bfcd32.jpg",
+            "image": "./icons/Prolux T.png",
             "description": "Đèn âm trần chiếu điểm, nhiều góc chiếu và nhiệt độ màu.",
             "features": "CRI >97, góc chiếu 90° tạo ánh sáng tập trung, không phát tia UV/IR, không chứa thủy ngân, hạn chế ánh sáng xanh gây hại mắt.  IP20, AC170-240V, Nhiệt độ hoạt động -20°C - 50°C, >85Lm/W, Vật liệu: Nhôm đúc.  Có 3 màu chóa: chóa vàng, chóa trắng, chóa đen. ",
             "applications": "Chiếu sáng dân dụng, văn phòng, cửa hàng, showroom.",
@@ -739,7 +739,7 @@
             }]
         }, {
             "name": "Đèn Âm Trần SPOTLIGHT PROLUX-TT",
-            "image": "https://i.postimg.cc/z6680207409617_0775151a1f39cb295020e6f603bf71da.jpg",
+            "image": "./icons/Prolux TT.png",
             "description": "Đèn âm trần chiếu điểm, nhiều góc chiếu và nhiệt độ màu. ",
             "features": "Dải điện áp 85V-265V phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao >85lm/W.  Độ hoàn màu CRI>98 tạo ánh sáng chân thực, không gian sống động và tốt cho mắt người.  Ánh sáng tỏa góc chiếu linh hoạt 15/24/36/50 độ, dễ dàng điều chỉnh theo nhu cầu sử dụng.  Chip RG1 Hạn chế ánh sáng xanh gây hại cho mắt.  Công nghệ chống chói UGR<6, tích hợp chức năng ẩn nguồn sáng và điều khiển màu sáng.  Không chói không nhòe, không gây nhức mỏi mắt.  Vỏ nhôm đúc bền, tản nhiệt tốt.  Không phát tia UV, tia hồng ngoại, không chứa thủy ngân - an toàn cho sức khỏe gia đình. ",
             "applications": "Chiếu sáng dân dụng, trang trí, văn phòng, cửa hàng.",
@@ -816,310 +816,7 @@
                 "đóng_gói": "30 PCS",
                 "price": "1.040.000 VND"
             }]
-        },{
-    "name": "Đèn LED ÂM TRẦN SMART v2",
-    "description": "Đèn LED âm trần kiểu dáng tròn, với các tùy chọn công suất và màu ánh sáng đa dạng. Sản phẩm được bảo hành 3 năm và đáp ứng các tiêu chuẩn chất lượng quốc tế.",
-    "features": "Thiết kế âm trần nhỏ gọn; Đa dạng màu ánh sáng (6500K/4000K/3000K); Góc chiếu 110°; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng dân dụng, văn phòng, không gian nội thất.",
-    "variants": [
-      {
-        "management_code": "DL-KS-TDST2-5",
-        "power": "5W",
-        "lumen": "425",
-        "dimensions_mm": "D102*H51",
-        "cut_hole_mm": "070-90",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "100",
-        "price": "94.000 VND"
-      },
-      {
-        "management_code": "DL-KS-TDST2-8",
-        "power": "8W",
-        "lumen": "700",
-        "dimensions_mm": "D120*H53",
-        "cut_hole_mm": "090-110",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "100",
-        "price": "118.000 VND"
-      },
-      {
-        "management_code": "DL-KS-TDST2-12",
-        "power": "12W",
-        "lumen": "1120",
-        "dimensions_mm": "D145*H57",
-        "cut_hole_mm": "Ø115-135",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "30",
-        "price": "188.000 VND"
-      },
-      {
-        "management_code": "DL-KS-TDST2-15",
-        "power": "15W",
-        "lumen": "1350",
-        "dimensions_mm": "D188*H65",
-        "cut_hole_mm": "Ø145-180",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "30",
-        "price": "262.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN SMART",
-    "description": "Đèn LED âm trần với thiết kế thông minh, phù hợp cho nhiều không gian nội thất. Bảo hành 3 năm.",
-    "features": "Góc chiếu 110°; Màu ánh sáng (4000K/3000K); Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng nội thất gia đình, văn phòng, cửa hàng.",
-    "variants": [
-      {
-        "management_code": "DL-KS-TDST-15",
-        "power": "15W",
-        "lumen": "1350",
-        "dimensions_mm": "D192*H67",
-        "cut_hole_mm": "Ø140-170",
-        "light": "4000K/3000K",
-        "packaging_pcs": "30",
-        "price": "LIÊN HỆ"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN NGÔI SAO",
-    "description": "Đèn LED âm trần với viền trang trí độc đáo, là sản phẩm bán chạy nhất (TOP 1 doanh số).",
-    "features": "Có các lựa chọn viền bạc, viền vàng, viền trắng; Đa dạng màu ánh sáng (6500K/4000K/3000K); Tùy chọn đổi màu; Góc chiếu 110°; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng dân dụng, trang trí, các không gian đòi hỏi tính thẩm mỹ cao.",
-    "variants": [
-      {
-        "management_code": "DL-KS-VB/VV/VT-5",
-        "power": "5W",
-        "lumen": "430",
-        "dimensions_mm": "D100*H40",
-        "cut_hole_mm": "070-85",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "100",
-        "price": "110.000 VND"
-      },
-      {
-        "management_code": "DL-KS-VB/VV/VT-5-DM",
-        "power": "5W",
-        "lumen": "430",
-        "dimensions_mm": "D100*H40",
-        "cut_hole_mm": "070-85",
-        "light": "Đổi màu",
-        "packaging_pcs": "100",
-        "price": "127.000 VND"
-      },
-      {
-        "management_code": "DL-KS-VB/VV/VT-8",
-        "power": "8W",
-        "lumen": "700",
-        "dimensions_mm": "D120*H45",
-        "cut_hole_mm": "085-100",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "50",
-        "price": "146.000 VND"
-      },
-      {
-        "management_code": "DL-KS-VB/VV/VT-8-DM",
-        "power": "8W",
-        "lumen": "700",
-        "dimensions_mm": "D120*H45",
-        "cut_hole_mm": "085-100",
-        "light": "Đổi màu",
-        "packaging_pcs": "50",
-        "price": "177.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN PRIME",
-    "description": "Đèn LED âm trần Prime với thiết kế hiện đại, mang lại ánh sáng chất lượng cao cho không gian của bạn. ",
-    "features": "Góc chiếu 60°; Đa dạng màu ánh sáng (6500K/4000K); Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng nội thất, phòng khách, phòng ngủ, khu vực thương mại.",
-    "variants": [
-      {
-        "management_code": "DL-KS-PRD-10",
-        "power": "10W",
-        "lumen": "700",
-        "dimensions_mm": "D85*H59",
-        "cut_hole_mm": "075",
-        "light": "6500K/4000K",
-        "packaging_pcs": "60",
-        "price": "219.000 VND"
-      },
-      {
-        "management_code": "DL-KS-PRD-15",
-        "power": "15W",
-        "lumen": "1200",
-        "dimensions_mm": "D105*H67",
-        "cut_hole_mm": "095",
-        "light": "6500K/4000K",
-        "packaging_pcs": "60",
-        "price": "345.000 VND"
-      },
-      {
-        "management_code": "DL-KS-PRD-20",
-        "power": "20W",
-        "lumen": "1600",
-        "dimensions_mm": "D132*H67",
-        "cut_hole_mm": "Ø120",
-        "light": "6500K/4000K",
-        "packaging_pcs": "40",
-        "price": "409.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN PRIME V2",
-    "description": "Sản phẩm mới Đèn LED âm trần Prime V2, mang đến giải pháp chiếu sáng hiện đại và hiệu quả. ",
-    "features": "Có viền đen và viền trắng; Đa dạng màu ánh sáng (6500K/4000K/3000K); Góc chiếu 60°; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Phù hợp cho không gian sống hiện đại và các dự án chiếu sáng thương mại. ",
-    "variants": [
-      {
-        "management_code": "DL-KS-PRD2/PRT2-10",
-        "power": "10W",
-        "lumen": "600",
-        "dimensions_mm": "D95*H46",
-        "cut_hole_mm": "075-85",
-        "light": "6500K/4000K",
-        "packaging_pcs": "60",
-        "price": "129.000 VND"
-      },
-      {
-        "management_code": "DL-KS-PRT2-15",
-        "power": "15W",
-        "lumen": "1000",
-        "dimensions_mm": "D109*H50",
-        "cut_hole_mm": "085-100",
-        "light": "6500K/4000K",
-        "packaging_pcs": "60",
-        "price": "170.000 VND"
-      },
-      {
-        "management_code": "DL-KS-PRT2-20",
-        "power": "20W",
-        "lumen": "1540",
-        "dimensions_mm": "D150*H54",
-        "cut_hole_mm": "Ø120-140",
-        "light": "6500K/4000K",
-        "packaging_pcs": "30",
-        "price": "242.000 VND"
-      },
-      {
-        "management_code": "DL-KS-PRT2-30",
-        "power": "30W",
-        "lumen": "2400",
-        "dimensions_mm": "D170*H57",
-        "cut_hole_mm": "Ø145-160",
-        "light": "6500K/4000K",
-        "packaging_pcs": "30",
-        "price": "324.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN SPARK",
-    "description": "Sản phẩm mới Đèn LED âm trần Spark, cung cấp ánh sáng tập trung với góc chiếu điều chỉnh được. ",
-    "features": "Góc chiếu đa dạng (15°/24°/36°); Đa dạng màu ánh sáng (6500K/4000K/3000K); CRI 90-95; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ. ",
-    "applications": "Chiếu sáng điểm nhấn, chiếu sáng phòng trưng bày, cửa hàng. ",
-    "variants": [
-      {
-        "management_code": "DL-KS-SPD-7",
-        "power": "7W",
-        "lumen": "450",
-        "dimensions_mm": "D64*H68",
-        "cut_hole_mm": "055",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "60",
-        "price": "269.000 VND"
-      },
-      {
-        "management_code": "DL-KS-SPD-10",
-        "power": "10W",
-        "lumen": "780",
-        "dimensions_mm": "D84*H76",
-        "cut_hole_mm": "075-78",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "60",
-        "price": "289.000 VND"
-      },
-      {
-        "management_code": "DL-KS-SPD-20",
-        "power": "20W",
-        "lumen": "1700",
-        "dimensions_mm": "D105*H101",
-        "cut_hole_mm": "095-98",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "30",
-        "price": "569.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN SPARK V3",
-    "description": "Sản phẩm mới nhất trong dòng Spark, Đèn LED âm trần Spark V3 mang đến hiệu suất chiếu sáng vượt trội. ",
-    "features": "Góc chiếu đa dạng (15°/24°/36°); Màu ánh sáng (4000K/3000K); CRI >95; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ. ",
-    "applications": "Lý tưởng cho chiếu sáng chất lượng cao, các khu vực yêu cầu độ chính xác màu sắc. ",
-    "variants": [
-      {
-        "management_code": "DL-KS-SPD3-10",
-        "power": "10W",
-        "lumen": "640",
-        "dimensions_mm": "D85*H82",
-        "cut_hole_mm": "075-78",
-        "light": "4000K/3000K",
-        "packaging_pcs": "60",
-        "price": "159.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "Đèn LED ÂM TRẦN SIÊU MỎNG",
-    "description": "Đèn LED âm trần siêu mỏng, với thiết kế hiện đại và gọn gàng, phù hợp cho trần thạch cao và các không gian hẹp. ",
-    "features": "Có các lựa chọn viền vàng, viền bạc, viền trắng; Góc chiếu 120°; Đa dạng màu ánh sáng (6500K/4000K/3000K); Tùy chọn đổi màu; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng nội thất, đặc biệt thích hợp cho không gian có trần thấp. ",
-    "variants": [
-      {
-        "management_code": "DL-KS-SMV/SMB/SMT-8",
-        "power": "8W",
-        "lumen": "750",
-        "dimensions_mm": "D120*H20",
-        "cut_hole_mm": "Ø90-105",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "60",
-        "price": "150.000 VND"
-      },
-      {
-        "management_code": "DL-KS-SMV/SMB/SMT-8DM",
-        "power": "8W",
-        "lumen": "750",
-        "dimensions_mm": "D120*H20",
-        "cut_hole_mm": "090-105",
-        "light": "Đổi màu",
-        "packaging_pcs": "60",
-        "price": "192.000 VND"
-      },
-      {
-        "management_code": "DL-KS-SMVSMB//SMT-12",
-        "power": "12W",
-        "lumen": "1200",
-        "dimensions_mm": "D137*H20",
-        "cut_hole_mm": "Ø110-125",
-        "light": "6500K/4000K/3000K",
-        "packaging_pcs": "60",
-        "price": "202.000 VND"
-      },
-      {
-        "management_code": "DL-KS-SMV/SMB/SMT-12DM",
-        "power": "12W",
-        "lumen": "1200",
-        "dimensions_mm": "D137*H20",
-        "cut_hole_mm": "Ø110-125",
-        "light": "Đổi màu",
-        "packaging_pcs": "60",
-        "price": "260.000 VND"
-      }
-    ]
-  },
+        },
     ],
         "Đèn LED Ốp Trần": [{
             "name": "Đèn LED ốp trần Classic",
@@ -1300,175 +997,7 @@
                 "lumen": "1770",
                 "dimensions_mm": "Φ300*H52"
             }]
-        },{
-    "name": "ĐÈN LED ỐP TRẦN SKY",
-    "description": "Sản phẩm mới đèn LED ốp trần Sky, với kiểu dáng hiện đại và khả năng đổi màu ánh sáng. ",
-    "features": "Có khả năng đổi màu; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng và trang trí không gian nội thất. ",
-    "variants": [
-      {
-        "management_code": "OP-KS-SKTMM-96-DM",
-        "power": "48-48-96W",
-        "lumen": "3600-3600-7200",
-        "dimensions_mm": "D500*H60.7",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.590.000 VND"
-      },
-      {
-        "management_code": "OP-KS-SKTMS-96-DM",
-        "power": "48-48-96W",
-        "lumen": "3600-3600-7200",
-        "dimensions_mm": "D500*H60.7",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.590.000 VND"
-      },
-      {
-        "management_code": "OP-KS-SKTMT-96-DM",
-        "power": "48-48-96W",
-        "lumen": "3600-3600-7200",
-        "dimensions_mm": "D500*H60.7",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.590.000 VND"
-      },
-      {
-        "management_code": "OP-KS-SKVMH-96-DM",
-        "power": "48-48-96W",
-        "lumen": "3600-3600-7200",
-        "dimensions_mm": "500*500*H60.7",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.590.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "ĐÈN LED ỐP TRẦN KIM CƯƠNG",
-    "description": "Đèn LED ốp trần với thiết kế hình kim cương độc đáo, mang lại vẻ sang trọng cho không gian. ",
-    "features": "Có khả năng đổi màu; Màu ánh sáng (6500K/4000K/3000K); Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP40; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng phòng khách, phòng ngủ, khu vực ăn uống, hoặc các không gian cần điểm nhấn thẩm mỹ. ",
-    "variants": [
-      {
-        "management_code": "OP-KS-KC-V2-18",
-        "power": "18W",
-        "lumen": "1600",
-        "dimensions_mm": "D250*H55",
-        "light": "6500K",
-        "packaging_pcs": "20",
-        "price": "349.000 VND"
-      },
-      {
-        "management_code": "OP-KS-KC-V2-24",
-        "power": "24W",
-        "lumen": "2000",
-        "dimensions_mm": "D325*H55",
-        "light": "6500K",
-        "packaging_pcs": "20",
-        "price": "475.000 VND"
-      },
-      {
-        "management_code": "OP-KS-KC-V2-36",
-        "power": "36W",
-        "lumen": "3000",
-        "dimensions_mm": "D400*H55",
-        "light": "6500K",
-        "packaging_pcs": "12",
-        "price": "560.000 VND"
-      },
-      {
-        "management_code": "OP-KS-KC-25/50-DM",
-        "power": "25-25-50W",
-        "lumen": "2000-2000-4000",
-        "dimensions_mm": "D400*H55",
-        "light": "Đổi màu",
-        "packaging_pcs": "12",
-        "price": "729.000 VND"
-      },
-      {
-        "management_code": "OP-KS-KC-45/90-DM",
-        "power": "45-45-90W",
-        "lumen": "3500-3500-7000",
-        "dimensions_mm": "D480*H55",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.494.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "ĐÈN LED ỐP TRẦN PHA LÊ",
-    "description": "Đèn LED ốp trần với thiết kế pha lê sang trọng, có tùy chọn viền xanh hoặc viền trắng, và khả năng đổi màu ánh sáng. ",
-    "features": "Có viền xanh hoặc viền trắng; Có khả năng đổi màu; Màu ánh sáng (6500K/4000K/3000K); Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Chiếu sáng và trang trí cho các không gian nội thất cao cấp, phòng ăn, phòng khách. ",
-    "variants": [
-      {
-        "management_code": "OP-KS-PLT-36-DM",
-        "power": "36W",
-        "lumen": "2800",
-        "dimensions_mm": "D500*H77",
-        "trim_color": "Trắng",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.494.000 VND"
-      },
-      {
-        "management_code": "OP-KS-PLX-36-DM",
-        "power": "36W",
-        "lumen": "2800",
-        "dimensions_mm": "D500*H77",
-        "trim_color": "Xanh",
-        "light": "Đổi màu",
-        "packaging_pcs": "6",
-        "price": "1.494.000 VND"
-      }
-    ]
-  },
-  {
-    "name": "ĐÈN LED ỐP TRẦN ARTEMIS",
-    "description": "Đèn LED ốp trần Artemis, mang lại ánh sáng ổn định và hiệu quả cho không gian của bạn. ",
-    "features": "Màu ánh sáng (6500K/4000K/3000K); Có khả năng đổi màu; Bảo hành 3 năm; Chứng nhận CE, RoHS, ISO 9001; Tiêu chuẩn IP20; Tuổi thọ 30.000 giờ; CRI >80. ",
-    "applications": "Thích hợp cho chiếu sáng tổng thể trong nhà, văn phòng, cửa hàng. ",
-    "variants": [
-      {
-        "management_code": "OP-KS-ATM-20-VT/VB/VN",
-        "power": "20W",
-        "lumen": "1570",
-        "dimensions_mm": "D282*H60",
-        "light": "6500K",
-        "packaging_pcs": "10",
-        "price": "459.000 VND"
-      },
-      {
-        "management_code": "OP-KS-ATM-30-VT/VB/VN",
-        "power": "30W",
-        "lumen": "2710",
-        "dimensions_mm": "D385*H65",
-        "light": "6500K",
-        "packaging_pcs": "10",
-        "price": "588.000 VND"
-      },
-      {
-        "management_code": "OP-KS-ATM-28/56-VT/VB/VN",
-        "power": "28-28-56W",
-        "lumen": "2348-2180-4565",
-        "dimensions_mm": "D385*H65",
-        "light": "Đổi màu",
-        "packaging_pcs": "10",
-        "price": "732.000 VND"
-      },
-      {
-        "management_code": "OP-KS-ATM-36/72-VT/VB/VN",
-        "power": "36-36-72W",
-        "lumen": "3000-2780-6038",
-        "dimensions_mm": "D485*H74",
-        "light": "Đổi màu",
-        "packaging_pcs": "5",
-        "price": "1.157.000 VND"
-      }
-    ]
-  },
+        },
     ],
         "Dây LED": [{
             "name": "Dây LED Galaxy",
@@ -1581,7 +1110,7 @@
         }],
         "Đèn Pha LED": [{
             "name": "Đèn pha LED V2",
-            "image": "https://i.ibb.co/99n6sn3j/pha-v2.png",
+            "image": "./icons/MB-Pha-led-V2-02_12_11zon.webp",
             "description": "Đèn pha LED chiếu sáng ngoài trời.  Cải tiến từ Đèn pha LED.",
             "features": "Dải điện áp (160-250V) hoạt động phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao (110-120 lm/W).  CRI>80 và lâu giảm sáng.  Van điều áp chống đọng nước bên trong đèn, phù hợp với môi trường ở Việt Nam có độ ẩm cao.  Vỏ nhôm đúc đảm bảo hiệu suất tản nhiệt cao.  Dây điện chống nước IP65 chống hơi nước xâm nhập vào đèn qua dây, có thể tháo rời thuận tiện cho bảo trì. ",
             "applications": "Chiếu sáng sân, vườn, bảng hiệu, công trình.",
@@ -1649,7 +1178,7 @@
             }]
         }, {
             "name": "Đèn pha LED",
-            "image": "https://i.ibb.co/8M6fWf8k/image.png",
+            "image": "./icons/MB-Pha-led-V2-02_12_11zon.webp",
             "description": "Đèn pha LED chiếu sáng ngoài trời. ",
             "features": "Dải điện áp (185-240V) hoạt động phù hợp với lưới điện ở Việt Nam.  Hiệu suất phát sáng cao (800-16000lm/W).  CRI>70 và lâu giảm sáng.  Chip LED có tuổi thọ cao lên đến 30.000H.  Sử dụng van cân bằng thoát hơi ẩm thông minh.  Kết hợp hộp nhôm kính bền nhẹ, dễ dàng thi công.  Linh hoạt lắp đặt ở nhiều không gian. ",
             "applications": "Chiếu sáng sân, vườn, bảng hiệu, công trình.",
@@ -1718,7 +1247,7 @@
             }]
         }, {
             "name": "Đèn Trụ Năng lượng mặt trời",
-            "image": "https://i.postimg.cc/Kzsts1pL/page5-img2.jpg",
+            "image": "./icons/image-Photoroom_10_11zon.webp",
             "description": "Đèn trụ sử dụng năng lượng mặt trời.",
             "features": "Pin Lithium LiFePo4 với 3000 chu kỳ sạc-xả giúp chống chai pin trong quá trình sử dụng.  Lựa chọn nhiều chế độ màu sắc ánh sáng bằng nút bấm.  Lắp đặt trụ cổng hoặc trên tường. ",
             "applications": "Chiếu sáng đường đi, công viên, sân vườn.",
@@ -1729,7 +1258,7 @@
             }]
         }, {
             "name": "Đèn tường Năng lượng mặt trời",
-            "image": "https://i.postimg.cc/cJhRw9QF/page5-img3.jpg",
+            "image": "./icons/image-Photoroom (1)_8_11zon.webp",
             "description": "Đèn tường sử dụng năng lượng mặt trời.",
             "features": "Pin Lithium LiFePo4 với 3000 chu kỳ sạc-xả giúp chống chai pin trong quá trình sử dụng.  Lựa chọn nhiều chế độ màu sắc ánh sáng bằng nút bấm.  Tích hợp cảm biến chuyển động sáng khi có người. ",
             "applications": "Chiếu sáng tường nhà, ban công, cửa.",
@@ -1741,7 +1270,7 @@
         }],
         "Đèn Ống Bơ": [{
             "name": "Đèn LED Bơ Tỏa",
-            "image": "https://i.postimg.cc/z6680327014799_77afc0adc2d014043a8f7bf6db23492f.jpg",
+            "image": "./icons/B-t-a.png",
             "description": "Ống bơ ánh sáng tỏa, thiết kế trụ tròn.",
             "features": "Vỏ nhôm đúc với hàm lượng cao, thiết kế dày dặn và tinh tế.  Dải điện áp 170V-240V hoạt động phù hợp với lưới điện ở Việt Nam.  Thiết kế chống chói giúp ánh sáng phát ra đẹp và chân thực.  Trang bị dây cao bảo vệ, an toàn khi lắp đặt. ",
             "applications": "Chiếu sáng dân dụng, văn phòng.",
@@ -1772,7 +1301,7 @@
             }]
         }, {
             "name": "Đèn LED Ống Bơ COB-S",
-            "image": "https://i.ibb.co/rf2BjzhR/Day-led-24-V-COB.png",
+            "image": "./icons/COB- S.png",
             "description": "Ống bơ chiếu điểm, sử dụng chip COB.",
             "features": "Vỏ nhôm đúc với hàm lượng cao, thiết kế dày dặn và tinh tế.  Dải điện áp 85V-265V hoạt động phù hợp với lưới điện ở Việt Nam.  Gắn nổi trần hoặc treo thả, phù hợp với nhiều kiểu trần.  Thiết kế gờ nổi tinh tế, khác biệt và đầy phong cách.  Chỉ số hoàn màu cao CRI>95 cho màu sắc chân thực, không gian sống động.  Hạn chế ánh sáng xanh gây hại mắt. ",
             "applications": "Chiếu sáng dân dụng, văn phòng, cửa hàng.",
@@ -1833,7 +1362,7 @@
             }]
         }, {
             "name": "Đèn LED Ống Bơ COB-H",
-            "image": "https://i.postimg.cc/z6680326802579_4dc012e2749892c836b3726850c5aba4.jpg",
+            "image": "./icons/COB H.png",
             "description": "Ống bơ chiếu điểm, sử dụng chip COB.  Công suất cao.",
             "features": "Vỏ nhôm đúc với hàm lượng cao, thiết kế dày dặn và tinh tế.  Dải điện áp 85V-265V hoạt động phù hợp với lưới điện ở Việt Nam.  Gắn nổi trần hoặc treo thả, phù hợp với nhiều kiểu trần.  Thiết kế gờ nổi tinh tế, khác biệt và đầy phong cách.  Chỉ số hoàn màu cao CRI>95 cho màu sắc chân thực, không gian sống động.  Hạn chế ánh sáng xanh gây hại mắt. ",
             "applications": "Chiếu sáng dân dụng, văn phòng, cửa hàng, nhà xưởng.",
